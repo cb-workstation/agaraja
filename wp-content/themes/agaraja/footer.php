@@ -11,21 +11,24 @@
 
 ?>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'agaraja' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'agaraja' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'agaraja' ), 'agaraja', '<a href="http://underscores.me/">Underscores.me</a>' );
-			?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+    </div><!-- #content -->
+    <footer id="colophon" class="site-footer">
+        <div class="site-info">
+            <div class="lineBlack">
+                <div class="container">
+                    <div class="row downLine">
+                        <div class="col-md-6 text-left copy">
+                            <p>Copyright &copy; 2017 A.G. Araja. All Rights Reserved | Develop by <a href="https://seabeeeksdi.wixsite.com/carlozb" target="_blank" style="color:#FFF;">CB</a>.</p>
+                        </div>
+                        <div class="col-md-6 text-right dm">
+                            <?php wp_nav_menu( array('menu' => 'primary', 'menu_id' => 'downMenu') ); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .site-info -->
+    </footer><!-- #colophon -->
+    <?php get_template_part( 'template-parts/content', 'modal' ); ?><!-- start of modal -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
