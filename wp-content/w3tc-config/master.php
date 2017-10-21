@@ -636,9 +636,9 @@
             ]
         }
     },
-    "common.edge": false,
+    "common.edge": true,
     "common.support": "",
-    "common.track_usage": "1",
+    "common.track_usage": true,
     "common.tweeted": false,
     "config.check": "1",
     "config.path": "",
