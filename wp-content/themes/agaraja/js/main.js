@@ -143,7 +143,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $(".pretty a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:6000, autoplay_slideshow: true, social_tools: ''});
+    $(".pretty a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:6000, autoplay_slideshow: true, social_tools: '',deeplinking:false});
 
     var chart = $('.chart'),
         chartNr = $('.chart-content'),
