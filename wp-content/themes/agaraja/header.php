@@ -9,7 +9,10 @@
  * @package agaraja
  */
 if (!is_front_page() || !is_home()) :
-$class = 'fixed';
+    $class = 'fixed';
+    $header_image = get_template_directory_uri().'/images//Headerlogo.png';
+else :
+    $header_image = get_field('header_logo');
 endif;
 ?>
 <!doctype html>
@@ -33,7 +36,7 @@ endif;
                     <div class="row">
                         <div class="logo col-md-4">
                             <div>
-                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="img-logo" src="<?php echo get_field('header_logo'); ?>"></a>
+                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="img-logo" src="<?php echo $header_image; ?>"></a>
                             </div>
                         </div>
                         <div class="col-md-8">
